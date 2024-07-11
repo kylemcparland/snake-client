@@ -8,12 +8,13 @@ const connect = function () {
 
   conn.setEncoding("utf-8");
 
-  conn.on("data", (data) => {
-    console.log("Message from server:", data);
+  conn.on("connect", () => {
+    console.log("You have connected successfully!");
+    conn.write("Name: KPM");
   });
 
-  conn.on("connect", () => {
-    console.log("You have connected successfully!")
+  conn.on("data", (data) => {
+    console.log("Message from server:", data);
   });
 
   conn.on("close", () => {
