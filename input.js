@@ -1,6 +1,7 @@
 const userInputs = require("./constants").userInputs;
 let connection;
 
+// Define and utilize stdin to send inputs to server
 const setupInput = function(conn) {
   console.log("Game controls:", userInputs);
   connection = conn;
@@ -19,7 +20,7 @@ const handleUserInput = function(key) {
     console.log("Disconnecting ...");
     process.exit();
   }
-  
+
   connection.write(userInputs[key]);
 };
 

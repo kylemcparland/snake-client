@@ -1,6 +1,7 @@
 const net = require("net");
 const { IP, PORT } = require("./constants");
 
+// Establish connection to server
 const connect = function(username) {
   const conn = net.createConnection({
     host: IP,
@@ -11,6 +12,7 @@ const connect = function(username) {
 
   conn.on("connect", () => {
     console.log("You have connected successfully!");
+    // Set username from play.js
     conn.write("Name: " + username);
   });
 

@@ -1,5 +1,5 @@
+// Change IP and PORT if server is not local
 const IP = "localhost";
-
 const PORT = 50541;
 
 const userInputs = {
