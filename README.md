@@ -1,5 +1,4 @@
 # Snake Client Project 🐍 - By: Kyle McParland (Lighthouse Labs 2024)
-***https://github.com/kylemcparland/snake-client***
 
 This is a custom built client for [Snek-Multiplayer], found here: ***https://github.com/lighthouse-labs/snek-multiplayer.git***
 - [Snek-Multiplayer] a terminal-based Snake implementation written in JavaScript (Node.js).
@@ -20,8 +19,7 @@ cd snake-client
 
 ## Final Product
 
-!["screenshot description"](#)
-!["screenshot description"](#)
+![Screenshot](https://ibb.co/jfLZRXN "Screenshot")
 
 ## Acknowledgements
 
