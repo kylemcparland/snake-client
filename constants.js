@@ -1,6 +1,8 @@
 const IP = "localhost";
+
 const PORT = 50541;
-const input = {
+
+const userInputs = {
   w: "Move: up",
   s: "Move: down",
   a: "Move: left",
@@ -14,5 +16,5 @@ const input = {
 module.exports = {
   IP,
   PORT,
-  input,
+  userInputs,
 };
