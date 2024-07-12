@@ -11,7 +11,7 @@ Before proceeding with installation of this client, you will need to be running 
 - Clone [snake-client] from the git repo into a separate directory:
 
 ```bash
-clone git@github.com:kylemcparland/snake-client.git 
+git clone git@github.com:kylemcparland/snake-client.git 
 cd snake-client
 ```
 
