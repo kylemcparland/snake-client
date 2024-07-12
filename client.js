@@ -1,7 +1,7 @@
 const net = require("net");
 const { IP, PORT } = require("./constants");
 
-const connect = function() {
+const connect = function(username) {
   const conn = net.createConnection({
     host: IP,
     port: PORT
@@ -11,8 +11,7 @@ const connect = function() {
 
   conn.on("connect", () => {
     console.log("You have connected successfully!");
-    conn.write("Name: KPM");
-    // conn.write("Move: up");
+    conn.write("Name: " + username);
   });
 
   conn.on("data", (data) => {

@@ -1,7 +1,17 @@
 const { connect } = require("./client");
 const { setupInput } = require("./input");
 
-console.log("Connecting ...");
-const conn = connect();
+const readline = require("readline");
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
 
-setupInput(conn);
+let username = "";
+rl.question("Set username (max 3 letters):", (name) => {
+  username = name;
+  rl.close();
+
+  console.log("Connecting ...");
+  setupInput(connect(username));
+});

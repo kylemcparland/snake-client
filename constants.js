@@ -5,7 +5,6 @@ const input = {
   s: "Move: down",
   a: "Move: left",
   d: "Move: right",
-  //
   h: "Say: HELLO",
   l: "Say: LOL",
   g: "Say: GG",
