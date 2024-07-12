@@ -19,7 +19,7 @@ cd snake-client
 
 ## Final Product
 
-![Screenshot](https://i.ibb.co/8jqfjcN/screenshot-snake-client.png "Screenshot")
+![Screenshot](https://i.ibb.co/D5Lx6hd/screenshot-snake-client.png "Screenshot")
 
 ## Acknowledgements
 
