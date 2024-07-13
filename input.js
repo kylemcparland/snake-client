@@ -16,11 +16,18 @@ const setupInput = function(conn) {
 };
 
 const handleUserInput = function(key) {
+  // CTRL+C to escape
   if (key === "\u0003") {
     console.log("Disconnecting ...");
     process.exit();
   }
 
+  // Unassigned key pressed
+  if (!userInputs[key]) {
+    console.log("\nNo such key in game controls!\n");
+  }
+
+  // Else, send command
   connection.write(userInputs[key]);
 };
 

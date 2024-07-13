@@ -22,6 +22,7 @@ const connect = function(username) {
 
   conn.on("close", () => {
     console.log("You have been disconnected!");
+    process.exit();
   });
 
   conn.on("error", (error) => {
